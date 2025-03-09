@@ -1,65 +1,136 @@
 <html>
 
 <head>
+    <title>My Market</title>
+    <style>
+        body {
 
-<title>Box model</title>
+            margin: 0px;
+            padding: 0px;
+            background-color: beige;
 
-<style>
+        }
+
+        .header {
+
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color: crimson;
+            color: white;
+            padding: 2px;
+
+        }
+
+        .text,
+        .text2 {
+
+            text-shadow: 2px 2px 5px black;
+
+
+        }
+
+        .items {
+
+            display: flex;
+            gap: 70px;
+            list-style: none;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        .item {
+
+            background-color: crimson;
+            padding: 20px;
+            height: 20px;
+            width: 80px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 50px;
+            box-shadow: 3px 3px 5px black;
+
+        }
+
+        .images {
+
+            display: flex;
+
+        }
+
+.text3{
+
+display: flex;
+justify-content: center;
+background-color: crimson;
+color: white;
+width: 300px;
+margin: auto;
+margin-top: 50px;
+border-radius: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+
+}
+        
+    </style>
+</head>
+
 <body>
+    <div class="header">
+        <h1 class="text">To My Market</h1>
+        <h3 class="text2">50-60% discount on premium product purchase</h3>
+    </div>
+    <div class="nav">
 
-h1{
+        <ul class="items">
 
-background-color: red;
-height: 200px;
-width: 300px;
-text-align: center;
-border: 5px solid cyan;
-margin-top: 100px;
-margin-right: 100px;
-margin-left: 100px;
-margin-bottom: 100px;
-padding-top: 20px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 20px;
+            <li class="item">MEN</li>
+            <li class="item">WOMEN</li>
+            <li class="item">KIDS</li>
 
-}
+        </ul>
 
-h2{
+    </div>
 
-background-color: aqua;
-height: 200px;
-width: 300px;
-text-align: center;
-border: 5px solid cyan;
-margin-top: 100px;
-margin-bottom: 100px;
-margin-left: 100px;
-margin-right: 100px;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 20px;
-padding-bottom: 20px;
+    <div class="images">
 
-}
+        <img height="300px" width="33%"
+            src="https://alpha.decorexpro.com/images/article/cropped/337-472/2020/09/vse-o-muzhskoj-odezhde-43.jpg">
+        <img height="300px" width="33%"
+            src="https://thumbs.dreamstime.com/b/beautiful-sexy-woman-glamor-fashion-model-wear-stylish-clothes-fall-collection-pants-jacket-accessory-handbag-shoes-forest-trees-78219875.jpg">
+        <img height="300px" width="33%"
+            src="https://d1coqmn8qm80r4.cloudfront.net/businesses/website_screenshots/000/041/884/original/open-uri20200723-4-1138u0u?1595539736">
 
-h3{
+    </div>
 
-background-color: blue;
-height: 200px;
-width: 300px;
-text-align: center;
-border: 5px solid cyan;
-margin-top: 100px;
-margin-bottom: 100px;
-margin-left: 100px;
-margin-right: 100px;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 20px;
-padding-bottom: 20px;
+<div class="text3">
+<h3>MEN's fashion</h3>
+</div>
 
-}
+
+
+    <div class="mens">
+
+<div class="product">
+
+<img height="140px" width="140px" src="https://img.drz.lazcdn.com/static/bd/p/f723d4d93ffee1b15dbd9d4347d3d386.jpg_720x720q80.jpg">
+<h3>Hoodie</h3>
+<h3>$80</h3>
+<button>BUY NOW</button>
+
+</div>
+
+    </div>
+
+</body>
+
+</html>}
 
 
 
