@@ -1,0 +1,25 @@
+console.log("HEllo World")
+var name="Wasif"
+var age="11"
+var adress="I live in Bangladesh,Uttara"
+var hobby="My Hobby Is Playing Football and Cricket"
+var mark="I got 93 In My Maths Exam"
+var marks="I got 95 In My English Exam"
+var a=5
+var b=6
+var c=7
+var d=8
+console.log(a + b)
+console.log(a - b)
+console.log(a * b)
+console.log(a / b)
+console.log("My Name Is "+name+" I'm "+age+" Years old")
+console.log(name)
+console.log(age)
+console.log(adress)
+console.log(marks)
+console.log(mark)
+console.log(a > b)
+console.log(a < b)
+console.log(a == b)
+console.log(a != b)
