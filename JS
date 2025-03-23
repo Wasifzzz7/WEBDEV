@@ -1,25 +1,42 @@
-let Name = "Wasif";
-
-if (Name == "Wasif"){
-    console.log("Welcome Wasif");
-}else if (Name == Farhaan){
-    console.log("Welcome Farhaan");
-}else if (Name == Ashfia){
-    console.log(" Welcome Ashfia");
-}else{
-    console.log("Welcome")
+// console.log("My Name Is Wasif")
+// console.log("I'm 11 Years Old")
+// var name="Wasif"
+// var age=11
+// console.log(name)
+// console.log(age)
+// console.log("I'm " + age + " Years Old")
+// var Class="5th"
+// console.log("I read in " + Class + " class")
+// let a=5
+// let b=6
+// let c=7
+// let d=8
+// let e=a+b
+// console.log(e)
+// console.log(c-d)
+// console.log(d+a)
+// console.log(b-c)
+// console.log(a>b)
+// console.log(a<b)
+// console.log(a==b)
+// console.log(a!=b)
+// function
+function GM(){
+    console.log("Good Morning")
+}
+GM()
+GM()
+function GN(){
+    console.log("Good Night")
+}
+function wish(Name,Name2){
+    console.log("Happy Birthday " + Name)
+    console.log("Wish from " + Name2)
 }
 
-var name = "Wasif"; //string
-var marks = 34.6; //float
-var grade = 5; //integar data
-var pass = true; //boolean
-
-
-// function wish() {
-//    console.log("Good Morning");
-// }
-
-// function GN() {
-//    console.log("Good Night")
-// }
+function add(a,b){
+    return a+b
+}
+console.log(add(7,17))
+let num=add(7,17)
+console.log(num)
