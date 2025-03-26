@@ -1,42 +1,53 @@
-// console.log("My Name Is Wasif")
-// console.log("I'm 11 Years Old")
-// var name="Wasif"
-// var age=11
-// console.log(name)
-// console.log(age)
-// console.log("I'm " + age + " Years Old")
-// var Class="5th"
-// console.log("I read in " + Class + " class")
-// let a=5
-// let b=6
-// let c=7
-// let d=8
-// let e=a+b
-// console.log(e)
-// console.log(c-d)
-// console.log(d+a)
-// console.log(b-c)
-// console.log(a>b)
-// console.log(a<b)
-// console.log(a==b)
-// console.log(a!=b)
-// function
-function GM(){
-    console.log("Good Morning")
-}
-GM()
-GM()
-function GN(){
-    console.log("Good Night")
-}
-function wish(Name,Name2){
-    console.log("Happy Birthday " + Name)
-    console.log("Wish from " + Name2)
+<html>
+
+<head>
+    <title>Function</title>
+
+    <style>
+        .My Button {
+
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 100px;
+
+        }
+
+        button {
+
+            padding: 15px;
+            border-radius: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="My Button">
+        <button onclick="Wasif()">Wasif</button>
+        <button onclick="Farhaan()">Farhaan</button>
+        <button onclick="Ashfia()">Ashfia</button>
+    </div>
+
+    <script>
+
+function Wasif(){
+    alert("Hello From Wasif")
 }
 
-function add(a,b){
-    return a+b
+function Farhaan(){
+    alert("Hello From Farhaan")
 }
-console.log(add(7,17))
-let num=add(7,17)
-console.log(num)
+
+function Ashfia(){
+    alert("Hello FRom Ashfia")
+}
+
+    </script>
+
+
+</body>
+
+</html>
