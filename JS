@@ -1,53 +1,67 @@
 <html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        
+<h1 id="text"></h1>
+<h1 id="text2"></h1>
 
-<head>
-    <title>Function</title>
+<div id="box"></div>
 
-    <style>
-        .My Button {
+<h1 id="magic">magic text</h1>
+<button id="Hello" onclick="Hello()">Hello</button>
+<button id="Hi" onclick="Hi()">Hi</button>
 
-            display: flex;
-            gap: 50px;
-            justify-content: center;
-            margin-top: 100px;
 
-        }
+<h1 id="q">What Is The Capital Of Bangladesh?</h1>
 
-        button {
+<h2 id="result"></h2>
 
-            padding: 15px;
-            border-radius: 20px;
+<button id="Dhaka" onclick="Dhaka()">Dhaka</button>
 
-        }
-    </style>
+<button id="Khulna" onclick="Khulna()">Khulna</button>
+<script>
+document.getElementById("text").textContent = "Welcome To Codingal"
 
-</head>
+document.getElementById("text2").textContent = "Today Were Going To Learn HTML DOC"
 
-<body>
+document.getElementById("text2").style.color = "red";
 
-    <div class="My Button">
-        <button onclick="Wasif()">Wasif</button>
-        <button onclick="Farhaan()">Farhaan</button>
-        <button onclick="Ashfia()">Ashfia</button>
-    </div>
+document.getElementById("text2").style.backgroundColor = "green";
 
-    <script>
+document.getElementById("text").style.color = "yellow";
 
-function Wasif(){
-    alert("Hello From Wasif")
+document.getElementById("text").style.backgroundColor = "orange";
+
+document.getElementById("box").innerHTML = "<h1>Hello</h1><br><h3>How Are You?</h3><br><input/> "
+
+document.getElementById("box").style.backgroundColor = "Cyan";
+
+document.getElementById("box").style.padding = 20
+
+document.getElementById("box").style.width = 200
+
+function Hi(){
+    document.getElementById("magic").textContent = "Hi";
 }
 
-function Farhaan(){
-    alert("Hello From Farhaan")
+function Hello(){
+    document.getElementById("magic").textContent = "Hello";
 }
 
-function Ashfia(){
-    alert("Hello FRom Ashfia")
+function Dhaka(){
+    document.getElementById("result").textContent = "Right Answer";
+    document.getElementById("result").style.color = "Green";
 }
 
-    </script>
+function Khulna(){
+    document.getElementById("result").textContent = "Wrong Answer";
+    document.getElementById("result").style.color = "Red";
+}
+
+</script>
 
 
-</body>
-
+    </body>
 </html>
