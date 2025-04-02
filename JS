@@ -1,67 +1,111 @@
 <html>
-    <head>
-        <title>DOM</title>
-    </head>
-    <body>
-        
-<h1 id="text"></h1>
-<h1 id="text2"></h1>
 
-<div id="box"></div>
+<head>
+    <title>QUIZ APP</title>
+    <style>
+        #qbox {
 
-<h1 id="magic">magic text</h1>
-<button id="Hello" onclick="Hello()">Hello</button>
-<button id="Hi" onclick="Hi()">Hi</button>
+            padding: 50px;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            background-color: crimson;
+            color: white;
+            border-radius: 20px;
+
+        }
+
+        #q {
+
+            font-size: 30px;
+
+        }
+
+        #ans {
+
+            display: flex;
+            gap: 80px;
+            justify-content: center;
+            margin: 50px;
+
+        }
+
+        #optA,
+        #optB {
+
+            padding: 13px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid white;
+            box-shadow: 3px 3px 5px black;
+
+        }
+
+        #next {
+
+            padding: 13px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid white;
+            box-shadow: 3px 3px 5px black;
+
+        }
+
+        #optB:hover {
+
+            box-shadow: none;
+
+        }
+
+        #optA:hover {
+
+            box-shadow: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="qbox">
+        <h3 id="q"></h3>
+        <div id="ans">
+            <button id="optA"></button>
+            <button id="optB"></button>
+        </div>
+        <button id="next" onclick="next()">next</button>
+    </div>
 
 
-<h1 id="q">What Is The Capital Of Bangladesh?</h1>
+    <script>
 
-<h2 id="result"></h2>
+        var question = { "What Is The Capital Of Bangladesh?", "What Is The National Fruit Of Bangladesh?", "Who Is The Prime Minister Of USA?"}
 
-<button id="Dhaka" onclick="Dhaka()">Dhaka</button>
+        var optA = { "Dhaka", "Mango", "Trump"}
+        var optB = { "Khulna", "Jackfruit", "Melon"}
 
-<button id="Khulna" onclick="Khulna()">Khulna</button>
-<script>
-document.getElementById("text").textContent = "Welcome To Codingal"
-
-document.getElementById("text2").textContent = "Today Were Going To Learn HTML DOC"
-
-document.getElementById("text2").style.color = "red";
-
-document.getElementById("text2").style.backgroundColor = "green";
-
-document.getElementById("text").style.color = "yellow";
-
-document.getElementById("text").style.backgroundColor = "orange";
-
-document.getElementById("box").innerHTML = "<h1>Hello</h1><br><h3>How Are You?</h3><br><input/> "
-
-document.getElementById("box").style.backgroundColor = "Cyan";
-
-document.getElementById("box").style.padding = 20
-
-document.getElementById("box").style.width = 200
-
-function Hi(){
-    document.getElementById("magic").textContent = "Hi";
-}
-
-function Hello(){
-    document.getElementById("magic").textContent = "Hello";
-}
-
-function Dhaka(){
-    document.getElementById("result").textContent = "Right Answer";
-    document.getElementById("result").style.color = "Green";
-}
-
-function Khulna(){
-    document.getElementById("result").textContent = "Wrong Answer";
-    document.getElementById("result").style.color = "Red";
-}
-
-</script>
+        var index = 0;
 
 
-    </body>
+        function LoadQ() {
+            document.getElementById("q").textContent = Question { index };
+            document.getElementById("optA").textContent = optA { index };
+            document.getElementById("optB").textContent = optB { index };
+        }
+
+        LoadQ()
+
+
+        function next() {
+            index++;
+            LoadQ()
+        }
+
+    </script>
+
+
+
+</body>
+
 </html>
