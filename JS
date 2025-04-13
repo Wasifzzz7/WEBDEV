@@ -1,22 +1,27 @@
 <html>
   <head>
-    <title>Wasif</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Task Manager</title>
   </head>
   <body>
-  
-  <div class="container-fluid text center bg-cyan-600 p-6">
-    <h1 class="text-5x1 font bold text white mb-2"Hello Everyone🙌</h1>
-  
-    <h1 class="text-xl font-bold text-white">Welcome To My Digital Portifolio</h1>
+    
+    
+    
+    <div>
+      <h1>My Task Manager App</h1>
+      <input id="task" placeholder="Enter Your Task" type="text"/>
+      <br>
+      <button id="addtask" onclick="AddTask()">
+        Add Task
+      </button>
+    </div>
+    <div>
+      <ul id="mytask"></ul>
     </div>
     
-    <div class="flex bg-cyan-200 p-2">
-    <img class="rounded-3x1" height="400px" width="400px"
-    src="https://static.vecteezy.com/system/resources/previews/033/221/470/large_2x/handsome-young-man-on-light-background-generate-ai-photo.jpg"
-         <p class="m-auto text-center text-x1"><span class="font-bold text-4x1">Wasif</span>
-      <br>Web Developer from Bangladesh</p>
-         
-         
     
-</html>
+    <script>
+      
+      
+    </script>
+    
+    
