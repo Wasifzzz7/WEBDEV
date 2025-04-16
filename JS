@@ -1,27 +1,36 @@
 <html>
-  <head>
-    <title>Task Manager</title>
+      <head>
+        <title>Ouiz Game</title>
   </head>
   <body>
-    
-    
-    
     <div>
-      <h1>My Task Manager App</h1>
-      <input id="task" placeholder="Enter Your Task" type="text"/>
-      <br>
-      <button id="addtask" onclick="AddTask()">
-        Add Task
-      </button>
+      <h1 id="question"></h1>
+      <button id="op1"></button>
+      <button id="op2"></button
+        <button id="next" onclick="Next Q()">Next Question</button>
     </div>
-    <div>
-      <ul id="mytask"></ul>
-    </div>
-    
-    
     <script>
+      var question = [
+        "What Is The Capital of Bangladesh?",
+        "What Is The National Fruit of Bangladesh?",
+        "What Is The Color of Apple?",
+      ];
+      var op1 = ["Khulna" , "Jackfruit" , "Red"]
+      var op2 = ["Dhaka" , "Mango" , "Green"]
+      var h1 = document.getElementById("question");
+      var b1 = documnet.getElementById("op1");
+      var b2 = document.getElementById("op2");
+      var roll = 0;
+      function Next Q() {
+        h1.textContent = question[roll];
+        b1.textContent = op1[roll];
+        b2.textContent = op2[roll];
+        roll++;
+        
+        if (roll == 3) {
+          roll = 0;
+        }
+      }
       
-      
-    </script>
-    
-    
+      Next Q();
+  
