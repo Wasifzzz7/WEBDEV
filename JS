@@ -1,36 +1,23 @@
 <html>
-      <head>
-        <title>Ouiz Game</title>
+  <head>
+    <title>Spotify</title>
+    <xcript src="https://cdn.jsdelivr.net/nmp/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div>
-      <h1 id="question"></h1>
-      <button id="op1"></button>
-      <button id="op2"></button
-        <button id="next" onclick="Next Q()">Next Question</button>
-    </div>
-    <script>
-      var question = [
-        "What Is The Capital of Bangladesh?",
-        "What Is The National Fruit of Bangladesh?",
-        "What Is The Color of Apple?",
-      ];
-      var op1 = ["Khulna" , "Jackfruit" , "Red"]
-      var op2 = ["Dhaka" , "Mango" , "Green"]
-      var h1 = document.getElementById("question");
-      var b1 = documnet.getElementById("op1");
-      var b2 = document.getElementById("op2");
-      var roll = 0;
-      function Next Q() {
-        h1.textContent = question[roll];
-        b1.textContent = op1[roll];
-        b2.textContent = op2[roll];
-        roll++;
-        
-        if (roll == 3) {
-          roll = 0;
-        }
-      }
-      
-      Next Q();
   
+  <body class="bg-gradient-to-r from-green-800 via-green-600 to-green-800" >
+    
+    <div class="text-center text-5x1 font-bold m-3 text-white">
+      <h1>Spotify</h1>
+    </div>
+    
+    <div class="mt-10 bg-green-400 w-90 p-5 text-center m-auto border-3 border-green-900 rounded-3x1">
+      <img class="h-70 w-60 rounded-3x1 m-auto" src="https://www.amadeamusicproductions.com/wp-content/uploads/2022/08/criminal_full-600x600-1.jpg"/>
+      <h3 class-="font-bold text-black text-3x1 m-3">Criminal</h3>
+      <audio controls>
+        <source src="#" type="audio/mpeg">
+      </audio>
+    </div>
+    
+    
+    
+    
