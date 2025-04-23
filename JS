@@ -1,23 +1,15 @@
 <html>
   <head>
     <title>Spotify</title>
-    <xcript src="https://cdn.jsdelivr.net/nmp/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/nmp/@tailwindcss/browser@4"></script>
   </head>
+  <body class="bg-green-800">
+    
+    <h1 class="text-center text-5x1 m-2 font-bold text-white text-shadow-lg">Spotify</h1>
+    
+    <div class="bg-green-500 p-3 w-120 m-auto mt-10 text-center border-black border-2 rounded-3x1 shadow-lg shadow-black">
+      <iframe id="VideoPlayer" class="h-70 w-110 m-auto  rounded-3x1" src="<iframe width="560" height="315" src="https://www.youtube.com/embed/dhYOPzcsbGM?si=eYpVRlgqDMeHrK3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+              <h2 id="name" class="text-black font-bold m-3 text-2x1">Alan Walker - On My Way</h2>
+    </div>
   
-  <body class="bg-gradient-to-r from-green-800 via-green-600 to-green-800" >
-    
-    <div class="text-center text-5x1 font-bold m-3 text-white">
-      <h1>Spotify</h1>
-    </div>
-    
-    <div class="mt-10 bg-green-400 w-90 p-5 text-center m-auto border-3 border-green-900 rounded-3x1">
-      <img class="h-70 w-60 rounded-3x1 m-auto" src="https://www.amadeamusicproductions.com/wp-content/uploads/2022/08/criminal_full-600x600-1.jpg"/>
-      <h3 class-="font-bold text-black text-3x1 m-3">Criminal</h3>
-      <audio controls>
-        <source src="#" type="audio/mpeg">
-      </audio>
-    </div>
-    
-    
-    
-    
+  <div>
