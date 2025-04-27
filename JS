@@ -1,15 +1,78 @@
 <html>
   <head>
-    <title>Spotify</title>
-    <script src="https://cdn.jsdelivr.net/nmp/@tailwindcss/browser@4"></script>
+    <title>Caraosel</title>
+    <style>
+      .caraosel {
+       
+        justify-content: center;
+        display: flex;  
+      }
+      
+      .MyImage {
+        
+        border-radius: 20px;
+        margin: 10px;
+        border: 10px solid white;
+        box-shadow: 2px 2px 5px black;
+      }
+      
+      .buttons {
+        
+        display: flex;
+        gap: 100p;
+        justify-content: center;
+      }
+      
+      #next,#prev {
+        
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: gray;
+        font-weight: bold;
+      }
   </head>
-  <body class="bg-green-800">
+  <body>
     
-    <h1 class="text-center text-5x1 m-2 font-bold text-white text-shadow-lg">Spotify</h1>
     
-    <div class="bg-green-500 p-3 w-120 m-auto mt-10 text-center border-black border-2 rounded-3x1 shadow-lg shadow-black">
-      <iframe id="VideoPlayer" class="h-70 w-110 m-auto  rounded-3x1" src="<iframe width="560" height="315" src="https://www.youtube.com/embed/dhYOPzcsbGM?si=eYpVRlgqDMeHrK3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-              <h2 id="name" class="text-black font-bold m-3 text-2x1">Alan Walker - On My Way</h2>
+    <div caraosel>
+      <img class="MyImage" id="MyImage" height="400px" width="auto" src="https://www.tallengestore.com/cdn/shop/products/Joker_-_Put_On_A_Happy_Face_-_Joaquin_Phoenix_-_Hollywood_English_Movie_Poster_3_1f3f78b1-3366-4394-a8b2-4d8431592dac.jpg?v=1579504957"
+      />
     </div>
-  
-  <div>
+    
+    <div class="button">
+      <button id="prev" onclick="Prev()">Prev</button>
+      <button id="next" onclick="Next()">Next</button
+      </div>
+      
+    <script>
+      Posters = [
+      "https://c8.alamy.com/comp/MJ2BR7/spider-man-homecoming-2017-directed-by-jon-watts-and-starring-tom-holland-michael-keaton-and-robert-downey-jr-peter-parker-takes-on-the-vulture-and-his-alien-technology-MJ2BR7.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe32a53d-0ef8-46b7-b65f-18a440441882/dbgxtm7-8721ad07-b614-4c56-ae74-67b5dc4a90aa.jpg/v1/fill/w_1024,h_1517,q_75,strp/avengers_infinity_war_poster_19_7_by_tycustoms_dbgxtm7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUxNyIsInBhdGgiOiJcL2ZcL2ZlMzJhNTNkLTBlZjgtNDZiNy1iNjVmLTE4YTQ0MDQ0MTg4MlwvZGJneHRtNy04NzIxYWQwNy1iNjE0LTRjNTYtYWU3NC02N2I1ZGM0YTkwYWEuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rKmvumWB0998baJcBv7AtJycfuxNORh5jmrbljes0hI",
+      ];
+      
+      var PosterIndex = 0;
+      
+      function ShowImage(){
+        var Image = document.getElementById("MyImage");
+        Image.src = Posters[PosterIndex];
+      }
+      
+      ShowImage()
+      
+      function Prev(){
+      PosterIndex  
+      }
+      
+      function Next(){
+        PosterIndex++;
+        ShowImage()
+      }
+      
+      
+       ShowImage()
+      
+    </script>
+
