@@ -1,78 +1,19 @@
 <html>
   <head>
-    <title>Caraosel</title>
-    <style>
-      .caraosel {
-       
-        justify-content: center;
-        display: flex;  
-      }
-      
-      .MyImage {
-        
-        border-radius: 20px;
-        margin: 10px;
-        border: 10px solid white;
-        box-shadow: 2px 2px 5px black;
-      }
-      
-      .buttons {
-        
-        display: flex;
-        gap: 100p;
-        justify-content: center;
-      }
-      
-      #next,#prev {
-        
-        padding: 10px;
-        margin: 10px;
-        border-radius: 10px;
-        border: 2px solid white;
-        background-color: gray;
-        font-weight: bold;
-      }
+    <title>NavBar</title>
+    <script src="https://cdn.jsdelivr.net/nmp/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-gray-800">
     
-    
-    <div caraosel>
-      <img class="MyImage" id="MyImage" height="400px" width="auto" src="https://www.tallengestore.com/cdn/shop/products/Joker_-_Put_On_A_Happy_Face_-_Joaquin_Phoenix_-_Hollywood_English_Movie_Poster_3_1f3f78b1-3366-4394-a8b2-4d8431592dac.jpg?v=1579504957"
-      />
-    </div>
-    
-    <div class="button">
-      <button id="prev" onclick="Prev()">Prev</button>
-      <button id="next" onclick="Next()">Next</button
+    <nav class="bg-gray-700 p-2 flex items-center justify-between">
+      
+      <div class="flex items-center gap-5 m-1">
+        <img class="w-15 h-15 rounded 3x1 border-2 border-white"
+             src=
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVcZ4pP_fMZ9ji8LrccMxDekGqzu6E6e1Jow&s">
+        <h1 class="text-white text-3x1 font-semibold">Codingal</h1>
       </div>
       
-    <script>
-      Posters = [
-      "https://c8.alamy.com/comp/MJ2BR7/spider-man-homecoming-2017-directed-by-jon-watts-and-starring-tom-holland-michael-keaton-and-robert-downey-jr-peter-parker-takes-on-the-vulture-and-his-alien-technology-MJ2BR7.jpg",
-      "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe32a53d-0ef8-46b7-b65f-18a440441882/dbgxtm7-8721ad07-b614-4c56-ae74-67b5dc4a90aa.jpg/v1/fill/w_1024,h_1517,q_75,strp/avengers_infinity_war_poster_19_7_by_tycustoms_dbgxtm7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUxNyIsInBhdGgiOiJcL2ZcL2ZlMzJhNTNkLTBlZjgtNDZiNy1iNjVmLTE4YTQ0MDQ0MTg4MlwvZGJneHRtNy04NzIxYWQwNy1iNjE0LTRjNTYtYWU3NC02N2I1ZGM0YTkwYWEuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rKmvumWB0998baJcBv7AtJycfuxNORh5jmrbljes0hI",
-      ];
-      
-      var PosterIndex = 0;
-      
-      function ShowImage(){
-        var Image = document.getElementById("MyImage");
-        Image.src = Posters[PosterIndex];
-      }
-      
-      ShowImage()
-      
-      function Prev(){
-      PosterIndex  
-      }
-      
-      function Next(){
-        PosterIndex++;
-        ShowImage()
-      }
-      
-      
-       ShowImage()
-      
-    </script>
-
+      <div class="text-white mr-10 text-xl font-semibold flex gap-10">
+        <a class="hover:text-cyan-300" href="#">Home</a>
+      </div>
