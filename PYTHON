@@ -1,0 +1,17 @@
+print("Hello my name is Wasif")
+print("I study in class 5")
+print("I'm from Bangladesh")
+print("I live in Dhaka,Uttara")
+
+
+name ="Wasif"
+country ="Bangladesh"
+Class ="5"
+
+
+
+
+
+print("My Name Is",name)
+print("I read in class",Class)
+print("I live in",country)
