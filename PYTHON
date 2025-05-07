@@ -1,17 +1,35 @@
-print("Hello my name is Wasif")
-print("I study in class 5")
-print("I'm from Bangladesh")
-print("I live in Dhaka,Uttara")
+#Data
 
 
-name ="Wasif"
-country ="Bangladesh"
-Class ="5"
+Name = "Wasif" #String
+Grade = 5 #Integer
+Mathmarks = 97 #Float
+PassesExam = True #Boolean DT
+d = 6
+c = 7
 
+print(type(Name))
+print(type(Grade))
 
+#Integer Operation
+a = 5
+b = 4
 
+#Numerical Operations
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a**b)
 
-
-print("My Name Is",name)
-print("I read in class",Class)
-print("I live in",country)
+#Logical Operation
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+print(a==b) #Equal
+print(a!=b) #Not Equal
+print(c+d)
+print(d-c)
+print(c-d)
+print(d+c)
