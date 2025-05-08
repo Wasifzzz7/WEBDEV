@@ -1,35 +1,25 @@
-#Data
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("white")
+screen.title("Lets draw with Wasif")
 
 
-Name = "Wasif" #String
-Grade = 5 #Integer
-Mathmarks = 97 #Float
-PassesExam = True #Boolean DT
-d = 6
-c = 7
+pen = turtle.Turtle()
 
-print(type(Name))
-print(type(Grade))
+# pen.fd(150)
+# pen.left(90)
+# pen.fd(100)
+# pen.left(90)
+# pen.fd(150)
+# pen.left(90)
+# pen.fd(100)
+pen.pensize(3)
+pen.color("red")
+pen.speed(2)
+pen.left(250)
+pen.fd(100)
 
-#Integer Operation
-a = 5
-b = 4
 
-#Numerical Operations
-print(a+b)
-print(a-b)
-print(a*b)
-print(a/b)
-print(a**b)
 
-#Logical Operation
-print(a>b)
-print(a<b)
-print(a>=b)
-print(a<=b)
-print(a==b) #Equal
-print(a!=b) #Not Equal
-print(c+d)
-print(d-c)
-print(c-d)
-print(d+c)
+turtle.done()
