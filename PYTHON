@@ -1,25 +1,10 @@
-import turtle
+username = input("Enter Username: ")
+password = input("Enter Password: ")
 
-screen = turtle.Screen()
-screen.bgcolor("white")
-screen.title("Lets draw with Wasif")
-
-
-pen = turtle.Turtle()
-
-# pen.fd(150)
-# pen.left(90)
-# pen.fd(100)
-# pen.left(90)
-# pen.fd(150)
-# pen.left(90)
-# pen.fd(100)
-pen.pensize(3)
-pen.color("red")
-pen.speed(2)
-pen.left(250)
-pen.fd(100)
-
-
-
-turtle.done()
+if username == "Wasif":
+    if password == "1234":
+        print("Welcome Wasif")
+    else:
+        print("Wrong Password")    
+else:
+    print("Wrong Username")   
