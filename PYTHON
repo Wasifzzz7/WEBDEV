@@ -1,7 +1,74 @@
-number= 10
-sum =0
+#OOP
 
-for i in range(1,11):
-    sum = sum+i
+class Human:
+     eyes = 2
+     nose = 1
+     mouth = 1
+     can_walk = True
+     legs = 2
+     hands = 2
 
-print(sum)    
+class  Car:
+     wheel = 4
+     engine = 1
+     bonet = True
+     windows = 8
+
+wasif = Human()     
+print(wasif.eyes)
+print(wasif.nose)
+print(wasif.can_walk)
+
+bmw = Car()
+print(bmw.engine)
+print(bmw.wheel)
+print(bmw.windows)
+
+class Animal:
+    legs = 4
+    nose = 1
+    ears = 2
+    mouth = 1
+    tail = 1 
+    
+lion = Animal()    
+print(lion.legs)
+print(lion.nose)
+print(lion.ears)
+print(lion.mouth)
+
+tiger = Animal()
+print(tiger.legs)
+print(tiger.nose)
+print(tiger.ears)
+print(tiger.mouth)
+
+cheetah = Animal()
+print(cheetah.legs)
+print(cheetah.nose)
+print(cheetah.ears)
+print(cheetah.mouth)
+
+class Car:
+
+    def Run(self):
+        print("Car is Running")
+
+    def Stop(self):
+        print("Car is Stopped")   
+
+bmw = Car()        
+bmw.Run()
+bmw.Stop()
+
+class Human:
+
+    def Walk(self):
+        print("Wasif is Walking")
+
+    def Stop(self):
+        print("Wasif Stopped")
+
+Wasif = Human()      
+Wasif.Walk()
+Wasif.Stop()
