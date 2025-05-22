@@ -1,74 +1,42 @@
-#OOP
-
 class Human:
-     eyes = 2
-     nose = 1
-     mouth = 1
-     can_walk = True
-     legs = 2
-     hands = 2
+    
+    def __init__(self,Age,Height,Language):
+        self.Age = Age
+        self.Height = Height
+        self.Language = Language
 
-class  Car:
-     wheel = 4
-     engine = 1
-     bonet = True
-     windows = 8
 
-wasif = Human()     
-print(wasif.eyes)
-print(wasif.nose)
-print(wasif.can_walk)
+wasif = Human(12,130,"Bengali")
+farhaan = Human(14,140,"Hindi")
 
-bmw = Car()
-print(bmw.engine)
-print(bmw.wheel)
-print(bmw.windows)
+print(wasif.Age)
+print(farhaan.Age)
+
+print(wasif.Height)
+print(farhaan.Height)
 
 class Animal:
-    legs = 4
-    nose = 1
-    ears = 2
-    mouth = 1
-    tail = 1 
-    
-lion = Animal()    
-print(lion.legs)
-print(lion.nose)
-print(lion.ears)
-print(lion.mouth)
 
-tiger = Animal()
-print(tiger.legs)
-print(tiger.nose)
-print(tiger.ears)
-print(tiger.mouth)
+    def __init__(self,sound):
+        self.sound = sound
 
-cheetah = Animal()
-print(cheetah.legs)
-print(cheetah.nose)
-print(cheetah.ears)
-print(cheetah.mouth)
+
+Dog = Animal("Bark,Bark")        
+Cat = Animal("Meow,Meow")
+
+print(Dog.sound)
+print(Cat.sound)
+
 
 class Car:
 
-    def Run(self):
-        print("Car is Running")
+    def __init__(self,Model,Price):
+        self.Model = Model
+        self.Price = Price
 
-    def Stop(self):
-        print("Car is Stopped")   
+def GetDetails(self):
+    print("Car Model",self.Model)
+    print("Car Price",self.Price)
 
-bmw = Car()        
-bmw.Run()
-bmw.Stop()
-
-class Human:
-
-    def Walk(self):
-        print("Wasif is Walking")
-
-    def Stop(self):
-        print("Wasif Stopped")
-
-Wasif = Human()      
-Wasif.Walk()
-Wasif.Stop()
+def GetCarPrice(self):
+    print("Car Price",self.Price)
