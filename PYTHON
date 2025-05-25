@@ -1,42 +1,20 @@
-class Human:
-    
-    def __init__(self,Age,Height,Language):
-        self.Age = Age
-        self.Height = Height
-        self.Language = Language
+my_dict = {}
 
+my_dict = {1: 'apple' , 2: 'ball'}
 
-wasif = Human(12,130,"Bengali")
-farhaan = Human(14,140,"Hindi")
+my_dict = {'name': 'John', 1:[2, 4, 3]}
+my_dict = {'name': 'Jack', 'age':26}
+print(my_dict['name'])
+print(my_dict.get['age'])
 
-print(wasif.Age)
-print(farhaan.Age)
+my_dict['age'] = 27
+print(my_dict)
 
-print(wasif.Height)
-print(farhaan.Height)
+my_dict['adress'] = 'Downtown'
+print(my_dict)
+my_dict.pop('age')
+print(my_dict)
+print("Adress :", my_dict.get('adress'))
 
-class Animal:
-
-    def __init__(self,sound):
-        self.sound = sound
-
-
-Dog = Animal("Bark,Bark")        
-Cat = Animal("Meow,Meow")
-
-print(Dog.sound)
-print(Cat.sound)
-
-
-class Car:
-
-    def __init__(self,Model,Price):
-        self.Model = Model
-        self.Price = Price
-
-def GetDetails(self):
-    print("Car Model",self.Model)
-    print("Car Price",self.Price)
-
-def GetCarPrice(self):
-    print("Car Price",self.Price)
+my_dict.clear()
+print(my_dict)
