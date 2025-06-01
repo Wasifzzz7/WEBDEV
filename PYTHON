@@ -1,20 +1,90 @@
-my_dict = {}
+# #String , Integer , Float , Boolean
+# Name = "Wasif"
+# Marks = 97
+# Math_Mark = 97
+# Is_passed = True
 
-my_dict = {1: 'apple' , 2: 'ball'}
+# #Conditional Statements
 
-my_dict = {'name': 'John', 1:[2, 4, 3]}
-my_dict = {'name': 'Jack', 'age':26}
-print(my_dict['name'])
-print(my_dict.get['age'])
+# age = 19
 
-my_dict['age'] = 27
-print(my_dict)
+# if age>18 :
+#     print("You areeligible for the voting")
+# else :
+#     print("You are not eligible")
 
-my_dict['adress'] = 'Downtown'
-print(my_dict)
-my_dict.pop('age')
-print(my_dict)
-print("Adress :", my_dict.get('adress'))
+# #Input
 
-my_dict.clear()
-print(my_dict)
+# Name = input("Enter Your Name")    
+# print(Name)
+# Age = input("Enter Your Age")
+# print(Age)
+
+# #Loops
+
+# for i in range(10):
+#     print(i," Hello")
+
+
+
+# count = 5
+
+# while(count>0):
+# print("Hello")
+# count = count-1
+
+# #List
+
+# fruits = ["Apple","Mango","Watermelon"]
+# print(fruits)
+# #Add elements
+# fruits.append("Cherry")
+# fruits.append("Blueberry")
+# #Remove Elements
+# fruits.remove("Apple")
+# fruits.remove("Mango")
+# print(fruits)
+
+# #Tuple
+# Friends = ("Subhadeep","Farhaan","Wasif","Rahul")
+# print(Friends)
+# #Tuple
+# Fruits = ("Apple","Banana","Watermelon","Grapes")
+#print(Fruits)
+
+# #List
+Cars = ["Mercedes","Porsche","Lamborghini"]
+print(Cars)
+#Add elements
+Cars.append("Bmw")
+Cars.append("Buggati")
+#Remove elements
+Cars.remove("Mercedes")
+Cars.remove("Lamborghini")
+print(Cars)
+#List
+Colours = ["Blue","Red","Yellow"]
+print(Colours)
+#Add elements
+Colours.append("White")
+Colours.append("Green")
+#Remove elements
+Colours.remove("Yellow")
+Colours.remove("Blue")
+print(Colours)
+print(Colours[1])
+
+#Tuple
+Friends = ("Subhadeep","Farhaan","Wasif","Rahul")
+print(Friends)
+print(Friends[0])
+print(Friends[1])
+print(Friends[2])
+print(Friends[3])
+#Tuple
+Fruits = ("Apple","Banana","Watermelon","Grapes")
+print(Fruits)
+print(Fruits[0])
+print(Fruits[1])
+print(Fruits[2])
+print(Fruits[3])
