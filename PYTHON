@@ -1,90 +1,35 @@
-# #String , Integer , Float , Boolean
-# Name = "Wasif"
-# Marks = 97
-# Math_Mark = 97
-# Is_passed = True
+print("Welcome to Phonebook")
 
-# #Conditional Statements
+Phonebook = {}
 
-# age = 19
+def AddContact(Name,Phone):
+    if Name in Phonebook:
+        print("Contact Already existed")
+    else:
+        Phonebook[Name] = Phone    
 
-# if age>18 :
-#     print("You areeligible for the voting")
-# else :
-#     print("You are not eligible")
+def DeleteContact(Name):
+    if Name in Phonebook:
+        del Phonebook[Name]
+    else:
+         print("Already Removed")   
 
-# #Input
+def ViewAllContact():
+    for key . value in Phonebook.items():
+        print(f"{key} - {value}")
 
-# Name = input("Enter Your Name")    
-# print(Name)
-# Age = input("Enter Your Age")
-# print(Age)
-
-# #Loops
-
-# for i in range(10):
-#     print(i," Hello")
-
-
-
-# count = 5
-
-# while(count>0):
-# print("Hello")
-# count = count-1
-
-# #List
-
-# fruits = ["Apple","Mango","Watermelon"]
-# print(fruits)
-# #Add elements
-# fruits.append("Cherry")
-# fruits.append("Blueberry")
-# #Remove Elements
-# fruits.remove("Apple")
-# fruits.remove("Mango")
-# print(fruits)
-
-# #Tuple
-# Friends = ("Subhadeep","Farhaan","Wasif","Rahul")
-# print(Friends)
-# #Tuple
-# Fruits = ("Apple","Banana","Watermelon","Grapes")
-#print(Fruits)
-
-# #List
-Cars = ["Mercedes","Porsche","Lamborghini"]
-print(Cars)
-#Add elements
-Cars.append("Bmw")
-Cars.append("Buggati")
-#Remove elements
-Cars.remove("Mercedes")
-Cars.remove("Lamborghini")
-print(Cars)
-#List
-Colours = ["Blue","Red","Yellow"]
-print(Colours)
-#Add elements
-Colours.append("White")
-Colours.append("Green")
-#Remove elements
-Colours.remove("Yellow")
-Colours.remove("Blue")
-print(Colours)
-print(Colours[1])
-
-#Tuple
-Friends = ("Subhadeep","Farhaan","Wasif","Rahul")
-print(Friends)
-print(Friends[0])
-print(Friends[1])
-print(Friends[2])
-print(Friends[3])
-#Tuple
-Fruits = ("Apple","Banana","Watermelon","Grapes")
-print(Fruits)
-print(Fruits[0])
-print(Fruits[1])
-print(Fruits[2])
-print(Fruits[3])
+while True:
+    choice = input("1.Add Contact\n2.Delete Contact\n3.View All Contact\n4.Exit\nSelect Option Here")
+    if choice =="1":
+        Name = input("Enter Name: ")
+        Phone = input("Enter Phone Number: ")
+        AddContact(Name,Phone)
+elif choice == "2":
+Name = input("Enter Name: ")
+DeleteContact(Name)
+elif choice == "3":
+ViewAllContact()
+elif choice == "4":
+break
+else:
+print("Invalid Entry! Try Again") 
