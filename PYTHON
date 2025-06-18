@@ -1,35 +1,21 @@
-print("Welcome to Phonebook")
+print("Hello This is a story about a King and a Queen")
 
-Phonebook = {}
+file = open("Story.txt", "w")
+file.write("The king and queen woke up early in the morning.")
+file.write("\nThey sat by the window and watched the sunrise.")
+file.close()
 
-def AddContact(Name,Phone):
-    if Name in Phonebook:
-        print("Contact Already existed")
-    else:
-        Phonebook[Name] = Phone    
 
-def DeleteContact(Name):
-    if Name in Phonebook:
-        del Phonebook[Name]
-    else:
-         print("Already Removed")   
+file = open("Story.txt","r")
+Content = file.read()
+print(Content)
 
-def ViewAllContact():
-    for key . value in Phonebook.items():
-        print(f"{key} - {value}")
 
-while True:
-    choice = input("1.Add Contact\n2.Delete Contact\n3.View All Contact\n4.Exit\nSelect Option Here")
-    if choice =="1":
-        Name = input("Enter Name: ")
-        Phone = input("Enter Phone Number: ")
-        AddContact(Name,Phone)
-elif choice == "2":
-Name = input("Enter Name: ")
-DeleteContact(Name)
-elif choice == "3":
-ViewAllContact()
-elif choice == "4":
-break
-else:
-print("Invalid Entry! Try Again") 
+file = open("Story.txt","a")
+file.write("\nLater, they had breakfast together in the garden.")
+file.write("\nIn the evening, they walked around the palace and talked.")
+file.close()
+
+
+file = open("Story.txt","r")
+print(file.read())
