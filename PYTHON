@@ -1,21 +1,19 @@
-print("Hello This is a story about a King and a Queen")
-
-file = open("Story.txt", "w")
-file.write("The king and queen woke up early in the morning.")
-file.write("\nThey sat by the window and watched the sunrise.")
-file.close()
-
-
-file = open("Story.txt","r")
-Content = file.read()
-print(Content)
-
-
-file = open("Story.txt","a")
-file.write("\nLater, they had breakfast together in the garden.")
-file.write("\nIn the evening, they walked around the palace and talked.")
-file.close()
-
-
-file = open("Story.txt","r")
-print(file.read())
+# friend = open("myfriend.txt","w")
+# friend.write("Taiyo")
+# friend.close()
+# friend = open("myfriend.txt","r")
+# print(friend.read())
+# friend = open("myfriend.txt","a")
+# friend.write("\nHassan")
+# friend.close()
+# friend = open("myfriend.txt","r")
+# print(friend.read())
+# friend = open("myfriend.txt","a")
+# friend.write("\nSaim")
+# friend.close()
+# friend = open("myfriend.txt","r")
+# print(friend.read())
+story = open("story.txt","r")
+# print(story.read())# Whats written in the file the "read" function shows that in the output area
+print(story.readline())
+print(story.readline())# The first "readline" function shows the first line of the the story second shows the second line
