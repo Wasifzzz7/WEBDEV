@@ -1,19 +1,28 @@
-# friend = open("myfriend.txt","w")
-# friend.write("Taiyo")
-# friend.close()
-# friend = open("myfriend.txt","r")
-# print(friend.read())
-# friend = open("myfriend.txt","a")
-# friend.write("\nHassan")
-# friend.close()
-# friend = open("myfriend.txt","r")
-# print(friend.read())
-# friend = open("myfriend.txt","a")
-# friend.write("\nSaim")
-# friend.close()
-# friend = open("myfriend.txt","r")
-# print(friend.read())
-story = open("story.txt","r")
-# print(story.read())# Whats written in the file the "read" function shows that in the output area
-print(story.readline())
-print(story.readline())# The first "readline" function shows the first line of the the story second shows the second line
+print("Welcome to Guess The Number Game🎮")
+print("Rule")
+print("The player must guess a secret number randomly chosen by the coputer within a limited chance")
+
+import random
+c_number = random.randint(1,10)
+print("Computer's chosen is - #️⃣")
+
+while True:
+    u_number = int(input(f"Enter Your Guess(1-10).{chance} chances left: "))
+    chance = chance-1
+    if chance == 0:
+        print("You Lost!.No chances left!")
+        print("Computer's number is: ",c_number)
+        break
+    
+    if c_number!=u_number :
+        continue
+
+    if c_number == u_number :
+        print("You Win!")
+        break
+
+    if u_number > c_number:
+        print("Try lower number")
+        
+    if u_number < c_number:    
+        print("Try higher number")
