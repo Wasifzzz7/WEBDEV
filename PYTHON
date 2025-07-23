@@ -1,31 +1,43 @@
 <html>
     <head>
-        <title>To_Do_List</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>Digital Clock</title>
     </head>
     <body>
 
 
-        <div id="container" class="container mx-auto mt-50 bg-gray-300 p-5 w-100 text-center rounded-x1 border-1 space-y-10">
-            <h1 class="text-2x1 font-bold m-2">Welcome To To_Do List App</h1>
-            <input class="bg-white border-blue-500 border-1 rounded-xl m-2 font-semibold text-xl text-center w-80 h-10" id="taskInput" type="text" placeholder="Enter Your Task">
-            <br>
-            <button class="bg-blue-600 text-white px-5 py-2 border-2 border-white rounded-full font-bold m-2" id="addButton" onclick="AddTask()">Add Task</button>
-            <ul id="taskList">
-                
-            </ul>
-        </div>
+        <div id="MyClock" onload="ShowTime()"></div>
 
         <script>
+            function ShowTime() {
+                var date = new Date();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+                var session = "AM";
 
-            function AddTask(){
-                let mytask = document.getElementById("taskInput").value;
-                let li = document.createElement("li");
-                li.textContent = mytask;
-                let ul = document.getElementById("taskList");
-                ul.appendChild(li);
+                if(h==0){
+                    h = 12
+                }
+                if(h>12){
+                    h = h-12
+                    session = "PM"
+                }
+                if(h<10){
+                    h = "0"+h;
+                }
+                if(m<10){
+                    m = "0"+m;
+                }   
+                if(s<10){
+                    s = "0"+s;
+                }
+                var time = h+" : "+m+" : "+s+" "+session;
+                var MyClock = document.getElementById("MyClock");
+                MyClock.innerText = time;
+                
+                setTimeout(ShowTime,1000)
             }
-
+            ShowTime()
         </script>
     </body>
 </html>
